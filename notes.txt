@@ -1,0 +1,12 @@
+# Hooks:
+
+#1
+const [count, setCount] = useState(0)
+const incrementCount = () => {
+setCount(count + 1)
+}
+
+#2
+useEffect 
+( api (data fetching), browser api, side effects, interacting with outside world )
+executes after every rerender (state changes ... )
