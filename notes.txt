@@ -10,3 +10,19 @@ setCount(count + 1)
 useEffect 
 ( api (data fetching), browser api, side effects, interacting with outside world )
 executes after every rerender (state changes ... )
+
+addEventListener -> remove listener on willunmountpage  
+
+
+useEffect(() => {
+    document.title = `You have clicked ${count} times`
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove); // remove listener
+    }
+  }, []); // empty arr - to invoke useEffect twice -> on didMount / willUnMount
+
+
+# export default function Login() {} // imideatly export - can't do with arrow function component
+  
