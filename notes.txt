@@ -1,5 +1,6 @@
 # Hooks:
 
+
 #1 useState()
 const [count, setCount] = useState(0)
 const incrementCount = () => {
@@ -23,9 +24,13 @@ useEffect(() => {
       window.removeEventListener('mousemove', handleMouseMove); // remove listener
     }
   }, []); // empty arr - to invoke useEffect twice -> on didMount / willUnMount
+  }, [someProp]); // to invoke also whenever someProp is changed 
 
 
 
 # export default function Login() {} // imideatly export - can't do with arrow function component
 
 
+
+#3 useRef()
+get React elements
