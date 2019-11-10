@@ -3,15 +3,14 @@ import { UserContext } from './index';
 
 
 export default function Todo({username}) {
+
+  const value = useContext(UserContext);
+
   return (
     <>
-      <div 
-        username={username}>
-        <UserContext.Consumer>  
-          {value => <div>Hello, {value}</div>}
-        </UserContext.Consumer>  
+      <div>
+        Hello, {value}
       </div>
-      {username}
     </>
   )
 }
