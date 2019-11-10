@@ -44,3 +44,9 @@ get React elements
 
 #5 useContext()
 
+
+
+
+
+#6 useReducer()
+
